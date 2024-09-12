@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona corriendo en el parque</title>
+    <style>
+       .personaje
+       {
+        height: 170px;
+        width: 118px;
+        background: url(Captura\ de\ pantalla\ \(3\).png);
+        margin: 0 auto;
+        animation: correr 2s steps(8) infinite;
+        position: absolute;
+        left: 40%;
+        bottom: 15px;
+
+        
+       }
+
+       .fondo
+       {
+        height: 432px;
+        width: 768px;
+        margin: 0 auto;
+        position: relative;
+        background: url(city.png);
+        animation: animar 2s linear infinite;
+       }
+
+       @keyframes correr 
+       {
+        0%{
+            background-position: 0px;
+        }
+
+        100%
+        {
+            background-position: -928px;
+        }
+       }
+
+       @keyframes animar
+       {
+        0% {
+            background-position: 0px;
+        }
+        100%{
+            background-position: -800px;
+        }
+       }
+    </style>
+</head>
+<body>
+
+<div class="fondo">
+    <div class="personaje"></div>
+</div>
+
+</body>
+</html>
+</html>
